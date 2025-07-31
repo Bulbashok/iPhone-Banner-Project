@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .status-bar {
@@ -34,8 +35,8 @@ body {
 
 .close-btn {
   position: absolute;
-  top: 60px;
-  left: 24px;
+  top: 65px;
+  left: 20px;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
@@ -44,21 +45,23 @@ body {
 
 .title {
   font-family: "SF Pro", sans-serif;
-  font-weight: 860;
   font-size: 42px;
   line-height: 46px;
   letter-spacing: 0px;
   text-align: center;
   color: white;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 180px;
+  margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
 }
 
 .image-grid {
   display: flex;
   gap: 6px;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+  width: 90%;
+  max-width: 342px;
 }
 
 .grid-image {
@@ -68,11 +71,54 @@ body {
 }
 
 .buttons-container {
-  width: 342px;
+  max-width: 342px;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.access-buttons-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.best-offer-badge {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  transform: translateY(-50%);
+  width: 119px;
+  height: 20px;
+  border-radius: 100px;
+  border: 1.1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
+}
+
+.action-btn.active {
+  background: rgb(105, 95, 95);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.action-btn.inactive {
+  background: rgb(28, 27, 27);
+  border: none;
+}
+
+.action-btn#btn-continue {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(7, 11, 51, 1);
+  justify-content: center;
 }
 
 .action-btn {
@@ -85,28 +131,58 @@ body {
   align-items: center;
   padding: 18px 24px;
   text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  font-size: 17px;
+  color: white;
+  font-size: 15px;
   transition: background-color 0.2s;
-}
-
-.action-btn:hover {
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 45px;
 }
 
 .footer a {
-  color: white;
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
   opacity: 0.8;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 376px) {
+  .banner-container {
+    background-position: center 30%;
+  }
+
+  .close-btn {
+    top: 35px;
+  }
+
+  .title {
+    margin-top: 110px;
+  }
+
+  .image-grid {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .banner-container {
+    background-position: center 35%;
+  }
+  .title {
+    margin-top: 120px;
+  }
+
+  .footer {
+    bottom: 10px;
+  }
 }

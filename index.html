@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Unlimited Access</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div class="banner-container">
@@ -30,36 +30,30 @@
           class="grid-image"
         />
       </div>
-
       <div class="buttons-container">
-        <a href="#" class="action-btn" id="btn-restore">
-          <span id="restore-text"
-            >YEARLE ACCESS<br />Just $39.99 per year
-          </span>
-          <span
-            >$0.48 <br />
-            per week</span
-          >
-        </a>
-        <a href="#" class="action-btn" id="btn-restore">
-          <span id="restore-text">WEEKLY ACCESS </span>
-          <span
-            >$6.99 <br />
-            per week</span
-          >
-        </a>
+        <div class="access-buttons-container">
+          <a href="#" class="action-btn active" id="btn-restore">
+            <span id="restore-text"
+              >YEARLY ACCESS<br />Just $39.99 per year</span
+            >
+            <span>$0.48 <br />per week</span>
+            <div class="best-offer-badge">BEST OFFER</div>
+          </a>
+          <a href="#" class="action-btn inactive" id="btn-restore">
+            <span id="restore-text">WEEKLY ACCESS</span>
+            <span>$6.99 <br />per week</span>
+          </a>
+        </div>
         <a href="#" class="action-btn" id="btn-continue">
           <span id="continue-text">Continue</span>
         </a>
       </div>
-
       <div class="footer">
-        <a href="#" id="privacy-link">Terms of Use</a>
-        <a href="#" id="privacy-link">Privacy Policy</a>
-        <a href="#" id="privacy-link">Restore</a>
+        <a href="https://apple.com/" id="terms-link">Terms of Use</a>
+        <a href="https://google.com/" id="privacy-link">Privacy Policy</a>
+        <a href="#" id="restore-link">Restore</a>
       </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
