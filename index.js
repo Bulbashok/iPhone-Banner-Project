@@ -88,11 +88,9 @@ function adaptForDevice() {
   const title = document.querySelector(".title");
 
   if (width <= 375) {
-    // iPhone SE, 8
     banner.style.backgroundPosition = "center 30%";
     title.style.marginTop = "120px";
   } else if (width <= 414) {
-    // iPhone 8+
     banner.style.backgroundPosition = "center 35%";
   }
 }
@@ -104,21 +102,17 @@ function setupEventListeners() {
       button.addEventListener("click", function (e) {
         e.preventDefault();
 
-        // Сбрасываем все кнопки
         document
           .querySelectorAll(".access-buttons-container .action-btn")
           .forEach((btn) => {
             btn.classList.remove("active");
             btn.classList.add("inactive");
-            // Удаляем active у всех бейджей
             btn.querySelector(".best-offer-badge")?.classList.remove("active");
           });
 
-        // Активируем текущую кнопку
         this.classList.add("active");
         this.classList.remove("inactive");
 
-        // Активируем бейдж только если он есть у текущей кнопки
         if (this.querySelector(".best-offer-badge")) {
           this.querySelector(".best-offer-badge").classList.add("active");
         }
