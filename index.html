@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" id="htmlLang">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,47 +11,93 @@
       <div class="status-bar"></div>
       <a href="#" class="close-btn">✕</a>
 
-      <h1 class="title" id="title">Get Unlimited<br />Access</h1>
+      <h1 class="title" id="title" data-translate="Get Unlimited <br>Access">
+        Get Unlimited<br />Access
+      </h1>
 
       <div class="image-grid">
-        <img
-          src="images/Unlimited Art Creati.png"
-          alt="Unlimited Art Creati"
-          class="grid-image"
-        />
-        <img
-          src="images/Exclusive Styles.png"
-          alt="Exclusive Styles"
-          class="grid-image"
-        />
-        <img
-          src="images/Magic Avatars With 2.png"
-          alt="Magic Avatars With 2"
-          class="grid-image"
-        />
+        <div class="image-with-text">
+          <img
+            src="images/Unlimited Art Creati.png"
+            alt="Unlimited Art Creati"
+            class="grid-image"
+          />
+          <div class="text-overlay" data-translate="Unlimited Art <br>Creation">
+            Unlimited Art<br />Creation
+          </div>
+        </div>
+        <div class="image-with-text">
+          <img
+            src="images/Exclusive Styles.png"
+            alt="Exclusive Styles"
+            class="grid-image"
+          />
+          <div class="text-overlay" data-translate="Unlimited Art <br>Creation">
+            Exclusive<br />Styles
+          </div>
+        </div>
+        <div class="image-with-text">
+          <img
+            src="images/Magic Avatars With 2.png"
+            alt="Magic Avatars With 2"
+            class="grid-image"
+          />
+          <div class="text-overlay" data-translate="Unlimited Art <br>Creation">
+            Magic Avatars<br />With 20% Off
+          </div>
+        </div>
       </div>
       <div class="buttons-container">
         <div class="access-buttons-container">
           <a href="#" class="action-btn active" id="btn-restore">
-            <span id="restore-text"
-              >YEARLY ACCESS<br />Just $39.99 per year</span
+            <div class="access-option">
+              <span id="restore-text" data-translate="YEARLY ACCESS"
+                >YEARLY ACCESS</span
+              >
+              <span data-translate="Just {{price}} per year" data-price="$39.99" class="per-year"
+                >Just $39.99 per year</span
+              >
+            </div>
+            <span
+              data-translate="{{price}} <br>per week"
+              data-price="$0.48"
+              class="per-week"
+              >$0.48 per week</span
             >
-            <span>$0.48 <br />per week</span>
-            <div class="best-offer-badge">BEST OFFER</div>
+            <div class="best-offer-badge" data-translate="BEST OFFER">
+              BEST OFFER
+            </div>
           </a>
-          <a href="#" class="action-btn inactive" id="btn-restore">
-            <span id="restore-text">WEEKLY ACCESS</span>
-            <span>$6.99 <br />per week</span>
+          <a href="#" class="action-btn inactive" id="btn-restore-weekly">
+            <span id="restore-text" data-translate="WEEKLY ACCESS"
+              >WEEKLY ACCESS</span
+            >
+            <span
+              data-translate="{{price}} <br>per week"
+              data-price="$6.99"
+              class="per-week"
+              >$6.99 per week</span
+            >
           </a>
         </div>
         <a href="#" class="action-btn" id="btn-continue">
-          <span id="continue-text">Continue</span>
+          <span id="continue-text" data-translate="Continue">Continue</span>
         </a>
       </div>
       <div class="footer">
-        <a href="https://apple.com/" id="terms-link">Terms of Use</a>
-        <a href="https://google.com/" id="privacy-link">Privacy Policy</a>
-        <a href="#" id="restore-link">Restore</a>
+        <a
+          href="https://apple.com/"
+          id="terms-link"
+          data-translate="Terms of Use"
+          >Terms of Use</a
+        >
+        <a
+          href="https://google.com/"
+          id="privacy-link"
+          data-translate="Privacy Policy"
+          >Privacy Policy</a
+        >
+        <a href="#" id="restore-link" data-translate="Restore">Restore</a>
       </div>
     </div>
     <script src="/index.js"></script>

@@ -70,6 +70,36 @@ body {
   border-radius: 8px;
 }
 
+.image-with-text {
+  position: relative;
+  flex: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  line-height: 100%;
+  padding: 0 5px;
+}
+
+.grid-image {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.text-overlay[lang="de"],
+.text-overlay[lang="fr"] {
+  font-size: 12px;
+  bottom: 5px;
+}
+
 .buttons-container {
   max-width: 342px;
   width: 90%;
@@ -84,6 +114,27 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.access-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.access-option span {
+  display: block;
+}
+
+.per-week {
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.per-year {
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
 }
 
 .best-offer-badge {
@@ -104,14 +155,20 @@ body {
   background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
 }
 
+.best-offer-badge.active {
+  color: rgba(20, 17, 49, 1);
+  background: #fff;
+  border-color: white;
+}
+
 .action-btn.active {
-  background: rgb(105, 95, 95);
-  border: 2px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.3024);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .action-btn.inactive {
-  background: rgb(28, 27, 27);
-  border: none;
+  background: rgba(255, 255, 255, 0.1016);
+  border-top-color: blue;
 }
 
 .action-btn#btn-continue {
