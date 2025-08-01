@@ -77,11 +77,11 @@ body {
 
 .text-overlay {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   left: 0;
   right: 0;
   color: white;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   line-height: 100%;
