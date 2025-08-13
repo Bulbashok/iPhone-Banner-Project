@@ -128,6 +128,13 @@ function setupEventListeners() {
     .getElementById("btn-continue")
     .addEventListener("click", function (e) {
       e.preventDefault();
-      console.log("Continue button clicked");
+      const activeBtn = document.querySelector(
+        ".access-buttons-container .action-btn.active"
+      );
+      if (activeBtn.id === "btn-restore") {
+        window.location.href = "https://apple.com/";
+      } else if (activeBtn.id === "btn-restore-weekly") {
+        window.location.href = "https://google.com/";
+      }
     });
 }
