@@ -1,17 +1,33 @@
 # Unlimited Access Banner
 
-A responsive full-screen web banner for iPhone devices with multi-language support.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Features
+Адаптивный полноэкранный веб-баннер для устройств iPhone с поддержкой нескольких языков. Оптимизирован для различных моделей iPhone с учетом особенностей их экранов.
 
-- Responsive design for iPhone SE, 8, 8+, X, 12
-- 6 language support (English, German, French, Spanish, Portuguese, Japanese)
-- Dynamic language detection (system language or URL parameter)
-- Adaptive styling for different screen sizes
-- Retina-ready images
+## 📱 Демо
 
-## Technologies
+**Живое демо:** [https://unlimited-access-banner.vercel.app/](https://unlimited-access-banner.vercel.app/)
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+![Banner Preview](https://github.com/user-attachments/assets/banner-preview-image)
+
+## ✨ Возможности
+
+### 🌐 Мультиязычная поддержка
+- **6 языков** (English, German, French, Spanish, Portuguese, Japanese)
+- **Автоматическое определение** языка системы
+- **Динамическое переключение** через URL параметры
+- **Локализованный контент** с учетом культурных особенностей
+
+### 📱 Адаптивный дизайн
+- **Полная поддержка iPhone** SE, 8, 8+, X, 12
+- **Респонсивная верстка** для всех размеров экранов
+- **Retina-готовые изображения** с оптимизацией под высокие плотности пикселей
+- **Адаптивная типографика** и spacing
+
+### 🎨 Технические особенности
+- **Чистый Vanilla JavaScript** без зависимостей
+- **Современный CSS3** с Flexbox/Grid
+- **Семантическая HTML5 разметка**
+- **Оптимизированная производительность**
