@@ -1,71 +1,89 @@
 <!DOCTYPE html>
-<html lang="de" id="htmlLang">
+<html lang="en" id="htmlLang">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Get unlimited access to art creation tools and exclusive features"
+    />
     <title>Unlimited Access</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="preload" href="images/bg.jpg" as="image" />
   </head>
   <body>
-    <div class="banner-container">
-      <div class="status-bar"></div>
-      <a href="#" class="close-btn">✕</a>
-      <h1 class="title" id="title" data-translate="Get Unlimited <br>Access">
-        Get Unlimited<br />Access
-      </h1>
-      <div class="image-grid">
-        <div class="image-with-text">
-          <img
-            src="images/Unlimited_Art_Creati.png"
-            srcset="
-              images/Unlimited_Art_Creati@2x.png 2x,
-              images/Unlimited_Art_Creati@3x.png 3x
-            "
-            alt="Unlimited Art Creati"
-            class="grid-image"
-          />
-          <div class="text-overlay" data-translate="Unlimited Art <br>Creation">
-            Unlimited Art<br />Creation
-          </div>
-        </div>
-        <div class="image-with-text">
-          <img
-            src="images/Exclusive_Styles.png"
-            srcset="
-              images/Exclusive_Styles@2x.png 2x,
-              images/Exclusive_Styles@3x.png 3x
-            "
-            alt="Exclusive Styles"
-            class="grid-image"
-          />
-          <div class="text-overlay" data-translate="Exclusive <br>Styles">
-            Exclusive<br />Styles
-          </div>
-        </div>
-        <div class="image-with-text">
-          <img
-            src="images/Magic_Avatars_With_2.png"
-            srcset="
-              images/Magic_Avatars_With_2@2x.png 2x,
-              images/Magic_Avatars_With_2@3x.png 3x
-            "
-            alt="Magic Avatars With 2"
-            class="grid-image"
-          />
-          <div
-            class="text-overlay"
-            data-translate="Magic Avatars <br>With 20% Off"
+    <main class="banner-container" aria-labelledby="title">
+      <div class="top-group">
+        <header class="banner-header">
+          <div class="status-bar" aria-hidden="true"></div>
+          <a href="#" class="close-btn" aria-label="Close">✕</a>
+          <h1
+            class="title"
+            id="title"
+            data-translate="Get Unlimited <br>Access"
           >
-            Magic Avatars<br />With 20% Off
+            Get Unlimited<br />Access
+          </h1>
+        </header>
+        <section class="image-grid" aria-label="Features">
+          <div class="image-with-text">
+            <img
+              src="images/Unlimited_Art_Creati.png"
+              srcset="
+                images/Unlimited_Art_Creati@2x.png 2x,
+                images/Unlimited_Art_Creati@3x.png 3x
+              "
+              alt="Unlimited Art Creation"
+              class="grid-image"
+              loading="lazy"
+            />
+            <div
+              class="text-overlay"
+              data-translate="Unlimited Art <br>Creation"
+            >
+              Unlimited Art<br />Creation
+            </div>
           </div>
-        </div>
+          <div class="image-with-text">
+            <img
+              src="images/Exclusive_Styles.png"
+              srcset="
+                images/Exclusive_Styles@2x.png 2x,
+                images/Exclusive_Styles@3x.png 3x
+              "
+              alt="Exclusive Styles"
+              class="grid-image"
+              loading="lazy"
+            />
+            <div class="text-overlay" data-translate="Exclusive <br>Styles">
+              Exclusive<br />Styles
+            </div>
+          </div>
+          <div class="image-with-text">
+            <img
+              src="images/Magic_Avatars_With_2.png"
+              srcset="
+                images/Magic_Avatars_With_2@2x.png 2x,
+                images/Magic_Avatars_With_2@3x.png 3x
+              "
+              alt="Magic Avatars with 20% off"
+              class="grid-image"
+              loading="lazy"
+            />
+            <div
+              class="text-overlay"
+              data-translate="Magic Avatars <br>With 20% Off"
+            >
+              Magic Avatars<br />With 20% Off
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="buttons-container">
+      <section class="buttons-container">
         <div class="access-buttons-container">
           <a href="#" class="action-btn active" id="btn-restore">
             <div class="access-option">
-              <span id="restore-text" data-translate="YEARLY ACCESS"
+              <span class="restore-text" data-translate="YEARLY ACCESS"
                 >YEARLY ACCESS</span
               >
               <span
@@ -86,7 +104,7 @@
             </div>
           </a>
           <a href="#" class="action-btn inactive" id="btn-restore-weekly">
-            <span id="restore-text" data-translate="WEEKLY ACCESS"
+            <span class="restore-text" data-translate="WEEKLY ACCESS"
               >WEEKLY ACCESS</span
             >
             <span
@@ -97,26 +115,36 @@
             >
           </a>
         </div>
-        <a href="#" class="action-btn" id="btn-continue">
-          <span id="continue-text" data-translate="Continue">Continue</span>
-        </a>
-      </div>
-      <div class="footer">
-        <a
-          href="https://apple.com/"
-          id="terms-link"
-          data-translate="Terms of Use"
-          >Terms of Use</a
-        >
-        <a
-          href="https://google.com/"
-          id="privacy-link"
-          data-translate="Privacy Policy"
-          >Privacy Policy</a
-        >
-        <a href="#" id="restore-link" data-translate="Restore">Restore</a>
-      </div>
-    </div>
+        <button type="button" class="action-btn" id="btn-continue">
+          <span data-translate="Continue">Continue</span>
+        </button>
+      </section>
+      <footer class="banner-footer">
+        <nav aria-label="Legal and account actions">
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://apple.com/"
+                id="terms-link"
+                data-translate="Terms of Use"
+                >Terms of Use</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://google.com/"
+                id="privacy-link"
+                data-translate="Privacy Policy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" id="restore-link" data-translate="Restore">Restore</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </main>
     <script src="/index.js"></script>
   </body>
 </html>

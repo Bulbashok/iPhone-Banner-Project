@@ -21,7 +21,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 34px;
+}
+
+.top-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
 
 .status-bar {
@@ -50,24 +58,20 @@ body {
   letter-spacing: 0px;
   text-align: center;
   color: white;
-  margin-top: 180px;
-  margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  max-width: 90%;
 }
 
 .image-grid {
   display: flex;
   gap: 6px;
-  margin-bottom: 35px;
-  width: 90%;
-  max-width: 342px;
 }
 
 .grid-image {
   flex: 1;
   object-fit: cover;
   border-radius: 8px;
+  width: 100%;
+  display: block;
 }
 
 .image-with-text {
@@ -88,29 +92,16 @@ body {
   padding: 0 5px;
 }
 
-.grid-image {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-}
-
-.text-overlay[lang="de"],
-.text-overlay[lang="fr"] {
-  font-size: 12px;
-  bottom: 5px;
-}
-
 .buttons-container {
+  position: relative;
   max-width: 342px;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .access-buttons-container {
-  position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -129,13 +120,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.3);
-  display: block;
   margin-right: 28px;
 }
 
 .per-year {
   color: rgba(255, 255, 255, 0.3);
-  display: block;
 }
 
 .best-offer-badge {
@@ -192,16 +181,17 @@ body {
   justify-content: center;
 }
 
-.footer {
-  position: absolute;
-  bottom: 40px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 45px;
+.banner-footer {
+  margin-bottom: 40px;
 }
 
-.footer a {
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 47px;
+}
+
+.footer-links a {
   color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
   opacity: 0.8;
@@ -215,9 +205,15 @@ html[lang="fr"] .title {
   line-height: 40px;
 }
 
-html[lang="de"] .footer,
-html[lang="fr"] .footer {
+html[lang="de"] .footer-links,
+html[lang="fr"] .footer-links {
   gap: 15px;
+}
+
+html[lang="de"] .text-overlay,
+html[lang="fr"] .text-overlay {
+  font-size: 12px;
+  bottom: 5px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -234,29 +230,31 @@ html[lang="fr"] .footer {
 
 @media (max-width: 376px) {
   .banner-container {
-    background-position: center 30%;
+    background-position: center 22%;
   }
 
   .close-btn {
     top: 35px;
   }
 
-  .title {
-    margin-top: 110px;
-    margin-bottom: 15px;
+  .banner-container {
+    gap: 26px;
   }
 
   .image-grid {
-    padding: 0 5px;
-    margin-bottom: 25px;
+    width: 97%;
+  }
+
+  .top-group {
+    gap: 16px;
   }
 
   .buttons-container {
-    padding: 0 5px;
-    gap: 10px;
+    width: 87%;
+    gap: 8px;
   }
 
-  .footer {
-    bottom: 10px;
+  .banner-footer {
+    margin-bottom: 10px;
   }
 }
