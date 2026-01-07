@@ -6,9 +6,13 @@
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
+  height: 100dvh;
   position: relative;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  min-height: 100dvh;
+  overscroll-behavior-y: none;
 }
 
 .banner-container {
