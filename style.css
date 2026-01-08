@@ -176,7 +176,32 @@ body {
   border: 1px solid rgb(255, 255, 255);
 }
 .action-btn.inactive {
-  background: rgba(255, 255, 255, 0.1016);
+  position: relative;
+  background: transparent;
+  border: 1px solid transparent;
+  color: white;
+}
+.action-btn.inactive.has-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  padding: 1px;
+
+  background: linear-gradient(
+    3deg,
+    rgba(255, 255, 255, 0) 40%,
+    #ffffff00 75%,
+    #cc00ff 100%
+  );
+
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.action-btn.inactive {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .action-btn#btn-continue {
   font-size: 20px;
