@@ -189,10 +189,10 @@ body {
   padding: 1px;
 
   background: linear-gradient(
-    3deg,
+    4deg,
     rgba(255, 255, 255, 0) 40%,
     #ffffff00 75%,
-    #cc00ff 100%
+    #01b4ff 100%
   );
 
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
