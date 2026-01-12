@@ -245,6 +245,21 @@ html[lang="fr"] .text-overlay {
   bottom: 5px;
 }
 
+html[lang="de"] .action-btn,
+html[lang="fr"] .action-btn {
+  padding: 0 14px;
+}
+
+html[lang="de"] .per-week,
+html[lang="fr"] .per-week {
+  margin-right: 0px;
+}
+
+html[lang="de"] .best-offer-badge,
+html[lang="fr"] .best-offer-badge {
+  font-size: 11px;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .banner-container {
     background-image: url("images/bg@2x.jpg");
