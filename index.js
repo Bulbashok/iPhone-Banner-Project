@@ -73,7 +73,6 @@ function setupEventListeners() {
   document
     .getElementById("btn-continue")
     .addEventListener("click", function (e) {
-      e.preventDefault();
       const activeBtn = document.querySelector(
         ".access-buttons-container .action-btn.active"
       );

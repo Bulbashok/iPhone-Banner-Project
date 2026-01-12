@@ -65,6 +65,8 @@ body {
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   z-index: 10;
+  background-color: transparent;
+  border: none;
 }
 
 .title {
@@ -129,14 +131,16 @@ body {
 }
 
 .access-option span {
+  text-align: start;
   display: block;
 }
 
 .per-week {
+  text-align: start;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.3);
-  margin-right: 28px;
+  width: 31%;
 }
 
 .per-year {
@@ -262,14 +266,13 @@ html[lang="fr"] .action-btn {
   padding: 0 14px;
 }
 
-html[lang="de"] .per-week,
-html[lang="fr"] .per-week {
-  margin-right: 0px;
-}
-
 html[lang="de"] .best-offer-badge,
 html[lang="fr"] .best-offer-badge {
   font-size: 11px;
+}
+
+html[lang="de"] .per-week {
+  width: 27%;
 }
 
 @media (max-width: 376px) {

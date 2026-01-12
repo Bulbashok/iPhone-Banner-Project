@@ -15,7 +15,7 @@
       <div class="top-group">
         <header class="banner-header">
           <div class="status-bar" aria-hidden="true"></div>
-          <a href="#" class="close-btn" aria-label="Close">✕</a>
+          <button type="button" class="close-btn" aria-label="Close">✕</button>
           <h1
             class="title"
             id="title"
@@ -80,7 +80,11 @@
       </div>
       <section class="buttons-container">
         <div class="access-buttons-container">
-          <a href="#" class="action-btn inactive has-glow" id="btn-restore">
+          <button
+            type="button"
+            class="action-btn inactive has-glow"
+            id="btn-restore"
+          >
             <div class="access-option">
               <span class="restore-text" data-translate="YEARLY ACCESS"
                 >YEARLY ACCESS</span
@@ -101,8 +105,12 @@
             <div class="best-offer-badge inactive" data-translate="BEST OFFER">
               BEST OFFER
             </div>
-          </a>
-          <a href="#" class="action-btn active" id="btn-restore-weekly">
+          </button>
+          <button
+            type="button"
+            class="action-btn active"
+            id="btn-restore-weekly"
+          >
             <span class="restore-text" data-translate="WEEKLY ACCESS"
               >WEEKLY ACCESS</span
             >
@@ -112,7 +120,7 @@
               class="per-week"
               >$6.99 per week</span
             >
-          </a>
+          </button>
         </div>
         <button type="button" class="action-btn" id="btn-continue">
           <span data-translate="Continue">Continue</span>
