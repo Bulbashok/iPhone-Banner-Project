@@ -1,12 +1,10 @@
 const SUPPORTED_LANGS = ["de", "en", "es", "fr", "ja", "pt"];
 let translations = {};
 
-document.addEventListener("DOMContentLoaded", function () {
-  const lang = getCurrentLanguage();
-  setupEventListeners();
-  loadTranslations(lang).then(() => {
-    applyTranslations(lang);
-  });
+const lang = getCurrentLanguage();
+setupEventListeners();
+loadTranslations(lang).then(() => {
+  applyTranslations(lang);
 });
 
 function getCurrentLanguage() {
